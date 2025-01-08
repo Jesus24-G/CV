@@ -30,4 +30,9 @@ img {
 .contenido-cv {
     display: grid;
     grid-template-columns: 30% 70%;
+    padding: 30px;
+}
+
+.cv {
+    border: 1px solid #c1c1c1;
 }
