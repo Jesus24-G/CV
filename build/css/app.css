@@ -1,0 +1,33 @@
+
+
+.contenedor {
+
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+.header {
+    display: grid;
+    grid-template-columns: 20% 10% 70%;
+    column-gap: 10%;
+    border: 1px solid #c1c1c1;
+
+    .nombre {
+       display: flex; 
+       align-items: center;
+       justify-content: start;
+    }
+
+
+}
+
+img {
+    width: 100%;
+}
+
+.contenido-cv {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
