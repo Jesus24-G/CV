@@ -1,7 +1,6 @@
 
 
 .contenedor {
-
     width: 1000px;
     max-width: 90%;
     margin: 0 auto;
@@ -10,6 +9,7 @@
 body {
     background-color: #f4efef;
     line-height: 1.5;
+    font-family: "Poppins", serif;
 }
 
 h2, h3, h4 {
@@ -21,9 +21,15 @@ h3 {
     font-size: 24px;
 }
 
+p {
+    margin: 5px 0;
+}
+
 span {
     font-weight: bold;
+    font-size: 18px;
 }
+
 
 .cv {
     background-color: white;
@@ -48,17 +54,16 @@ span {
 
 img {
     width: 100%;
+    border-radius: 50%;
 }
 
 .contenido-cv {
     display: flex;
     flex-direction: column;
-    padding: 10px;
 
     @media (min-width: 768px) {
         display: grid;
         grid-template-columns: 30% 70%;
-        padding: 30px;
     }
 }
 
@@ -69,16 +74,21 @@ img {
 /* --------- Contenido left --------------- */
 
 .contenido-left {
-    /* background-color: aliceblue; */
+    background-color: black;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    color: white;
 
     @media (min-width: 768px) {
         display: block;
 
-
     }
+}
+
+.contenido-right {
+    padding: 25px;
 }
 
 .contacto {
