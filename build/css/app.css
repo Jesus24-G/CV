@@ -57,6 +57,12 @@ img {
     border-radius: 50%;
 }
 
+/* @media (min-width: 768px) { */
+    /* img { */
+        /* max-width: 80%; */
+    /* } */
+/* } */
+
 .contenido-cv {
     display: flex;
     flex-direction: column;
@@ -75,16 +81,43 @@ img {
 
 .contenido-left {
     background-color: black;
+    padding: 20px;
+}
+
+.text-left {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 20px;
     color: white;
+}
 
-    @media (min-width: 768px) {
+@media (min-width: 768px) {
+    .text-left {
+        display: block;
+    }
+}
+
+
+.contenido-left .foto {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .contenido-left {
         display: block;
 
     }
+
 }
 
 .contenido-right {
