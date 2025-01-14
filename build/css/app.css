@@ -22,7 +22,7 @@ h3 {
 }
 
 p {
-    margin: 5px 0;
+    margin: 5px 0 5px 10px;
 }
 
 span {
@@ -79,18 +79,61 @@ img {
 
 /* --------- Contenido left --------------- */
 
+h3 {
+    margin: 12px 0;
+}
+
 .contenido-left {
     background-color: black;
     padding: 20px;
 }
 
 .text-left {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: 1fr 1fr; */
     color: white;
+    padding: 10px;
+    font-size: 18px;
+
+}
+.contacto, .aptitudes, .idiomas, .lenguajes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border: 1.5px solid white;
+    border-style: dashed;
 }
 
+.text-left h3  {
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+@media (min-width: 480px) {
+
+    .foto {
+        padding: 20px;
+    }
+
+    .contenido-left {
+        padding: 0;
+    }
+    .text-left {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 20px;
+        color: white;
+    }
+
+    
+
+}
 @media (min-width: 768px) {
     .text-left {
         display: block;
