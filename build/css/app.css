@@ -12,6 +12,11 @@ body {
     font-family: "Poppins", serif;
 }
 
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
 h2, h3, h4 {
     color: rgb(132, 117, 245);
     font-weight: bold;
@@ -88,29 +93,32 @@ h3 {
     padding: 20px;
 }
 
+.contenido-left .foto {
+    width: 80%;
+    margin: 0 auto;
+}
 .text-left {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-template-rows: 1fr 1fr; */
     color: white;
     padding: 10px;
     font-size: 18px;
 
 }
+.text-left h3  {
+    font-size: 25px;
+    text-align: center;
+}
+
 .contacto, .aptitudes, .idiomas, .lenguajes {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-    border: 1.5px solid white;
-    border-style: dashed;
+    border: 1.5px dashed white;
+    border: 1.5px dashed white; 
 }
 
-.text-left h3  {
-    font-size: 25px;
-    text-align: center;
-}
+
 
 
 
@@ -133,39 +141,57 @@ h3 {
 
     
 
+    
+
 }
 @media (min-width: 768px) {
+    .contenido-left {
+        padding: 20px;
+        display: block;
+    }
+
+    .contenido-right p {
+        font-size: 18px;
+    }
+
+    .text-left {
+        font-size: 15px;
+    }
+
     .text-left {
         display: block;
     }
-}
 
-
-.contenido-left .foto {
-    width: 80%;
-    margin: 0 auto;
-}
-
-
-@media (min-width: 768px) {
-
-}
-
-
-
-
-
-@media (min-width: 768px) {
-    .contenido-left {
-        display: block;
-
+    .foto {
+        margin: 0;
+        padding: 0;
     }
+
+    p {
+        font-size: 15px;
+    }
+
+    .contacto, .aptitudes, .idiomas, .lenguajes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        border: 0;
+        border-top: 1.5px dashed white;
+        border-bottom: 1.5px dashed white;
+    }
+    
+}
+
+
+
+
+
+@media (min-width: 768px) {
 
 }
 
 .contenido-right {
     padding: 25px;
-}
-
-.contacto {
 }
